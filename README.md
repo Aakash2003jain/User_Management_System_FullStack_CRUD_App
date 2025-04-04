@@ -65,3 +65,25 @@ spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 ```
 ⚠️ IMPORTANT: Replace YOUR_MYSQL_USERNAME and YOUR_MYSQL_PASSWORD with your actual MySQL credentials.
 
+### 4️⃣ Run the Backend
+Open terminal and run the Spring Boot app:
+```bash
+cd backend/fullstack-backend
+./mvnw spring-boot:run
+```
+This starts the server on http://localhost:8080.
+
+
+
+### 5️⃣ Run the Frontend
+Open another terminal and start the React app:
+```bash
+cd frontend
+npm install
+npm start
+```
+
+
+
+
+
