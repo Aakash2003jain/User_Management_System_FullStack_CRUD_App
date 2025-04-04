@@ -55,13 +55,13 @@ backend/fullstack-backend/src/main/resources/application.properties
 Update the database connection with your own MySQL username and password:
 
 ```bash
+spring.application.name=fullstack-backend
+spring.jpa.hibernate.ddl-auto=update
 spring.datasource.url=jdbc:mysql://localhost:3306/fullstack-backend
 spring.datasource.username=YOUR_MYSQL_USERNAME
 spring.datasource.password=YOUR_MYSQL_PASSWORD
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
-server.port=8080
 ```
-
+⚠️ IMPORTANT: Replace YOUR_MYSQL_USERNAME and YOUR_MYSQL_PASSWORD with your actual MySQL credentials.
 
