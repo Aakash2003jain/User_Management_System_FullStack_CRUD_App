@@ -45,5 +45,23 @@ Install and open MySQL Workbench
 
 Create a new schema (database) named :
 ```bash
-CREATE DATABASE userdb;
+CREATE DATABASE fullstack-backend;
 ```
+### 3️⃣ Configure Spring Boot (application.properties)
+Navigate to:
+```bash
+backend/fullstack-backend/src/main/resources/application.properties
+```
+Update the database connection with your own MySQL username and password:
+
+```bash
+spring.datasource.url=jdbc:mysql://localhost:3306/fullstack-backend
+spring.datasource.username=YOUR_MYSQL_USERNAME
+spring.datasource.password=YOUR_MYSQL_PASSWORD
+
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+server.port=8080
+```
+
+
